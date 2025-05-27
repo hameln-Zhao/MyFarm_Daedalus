@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1543048f77774cb4d87a4079e6e1df0e, type: 3}
+  m_Name: ConsumableDataList_SO
+  m_EditorClassIdentifier: 
+  ItemDetailsList: []
+  fishDataList_SO: {fileID: 11400000, guid: de75982f8473b7f44aa836fb50474a9d, type: 2}

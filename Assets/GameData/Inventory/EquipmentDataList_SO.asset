@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43adb3b4fa6749f4e9b56830210b7422, type: 3}
+  m_Name: EquipmentDataList_SO
+  m_EditorClassIdentifier: 
+  ItemDetailsList:
+  - ItemID: 1001
+    ItemName: "\u9504\u5934"
+    ItemType: 3
+    ItemIcon: {fileID: 21300000, guid: 71ca9227166f34790bb8b1c7948d491f, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 0
+    CanSell: 0
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 0
+    CanDropped: 0
+    CanCarried: 0
+    BaseDamage: 0
+    equipmentType: 0
+    efficiency: 1
+    MaxAttachments: 3
+  - ItemID: 1002
+    ItemName: "\u6C34\u58F6"
+    ItemType: 3
+    ItemIcon: {fileID: 21300000, guid: 5b98b5b289f8549f9bbd017e5f0aa5c7, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 0
+    CanSell: 0
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 0
+    CanDropped: 0
+    CanCarried: 0
+    BaseDamage: 0
+    equipmentType: 4
+    efficiency: 1
+    MaxAttachments: 3
+  - ItemID: 1003
+    ItemName: "\u83DC\u7BEE"
+    ItemType: 3
+    ItemIcon: {fileID: 21300000, guid: 21f88cda6c810402583055801e6a2c73, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 0
+    CanSell: 0
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 0
+    CanDropped: 0
+    CanCarried: 0
+    BaseDamage: 0
+    equipmentType: 5
+    efficiency: 1
+    MaxAttachments: 3
+  - ItemID: 1004
+    ItemName: "\u9C7C\u7AFF"
+    ItemType: 3
+    ItemIcon: {fileID: 21300000, guid: 7ca07b7efb16fd34d8679486f5aa5b50, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 0
+    CanSell: 0
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 0
+    CanDropped: 0
+    CanCarried: 0
+    BaseDamage: 0
+    equipmentType: 6
+    efficiency: 1
+    MaxAttachments: 3
+  - ItemID: 1005
+    ItemName: "\u65B0\u7269\u54C1"
+    ItemType: 3
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 0
+    CanSell: 0
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 0
+    CanDropped: 0
+    CanCarried: 0
+    BaseDamage: 0
+    equipmentType: 0
+    efficiency: 1
+    MaxAttachments: 3

@@ -1,0 +1,591 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361305033759eed47b60b8048fab6a29, type: 3}
+  m_Name: FishDataList_SO
+  m_EditorClassIdentifier: 
+  fishDataList:
+  - ItemID: 2001
+    ItemName: "\u5783\u573E"
+    ItemType: 5
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: "\u7EAF\u7CB9\u7684\u5783\u573E"
+    ItemPrice: 1
+    ItemUseRadius: 0
+    SellPercentage: 1
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 0
+    fieldID: 010000000200000000000000
+    seasons: 00000000010000000200000003000000
+    weathers: 
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 0
+    difficultyLevel: 1
+    fishingToolItemID: e9030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 5
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2002
+    ItemName: "\u7834\u788E\u7684\u773C\u955C"
+    ItemType: 5
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 0
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 0
+    difficultyLevel: 1
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2003
+    ItemName: "\u6298\u7EB8\u5C0F\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 2ab861850170a5a4daf99b6fb358f8b0, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: "\u6298\u7EB8\u5C0F\u9C7C"
+    ItemPrice: 50
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 0
+    fieldID: 010000000200000000000000
+    seasons: 01000000020000000300000000000000
+    weathers: 
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 1
+    difficultyLevel: 1
+    fishingToolItemID: e9030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2004
+    ItemName: "\u6298\u7EB8\u5C0F\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 2ab861850170a5a4daf99b6fb358f8b0, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: "\u7A00\u6709\u6298\u7EB8\u5C0F\u9C7C"
+    ItemPrice: 100
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 1
+    fieldID: 010000000200000000000000
+    seasons: 00000000010000000200000003000000
+    weathers: 
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 1
+    difficultyLevel: 1
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2005
+    ItemName: "\u6298\u7EB8\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 1
+    difficultyLevel: 1
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2006
+    ItemName: "\u6298\u7EB8\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 1
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 1
+    difficultyLevel: 1
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2007
+    ItemName: "\u6298\u7EB8\u5927\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 709947d08509b408db26e4136a0232ee, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 0
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 2
+    difficultyLevel: 2
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 1
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2008
+    ItemName: "\u6298\u7EB8\u5927\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 709947d08509b408db26e4136a0232ee, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 1
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 2
+    difficultyLevel: 2
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2009
+    ItemName: "\u590F\u5929\u7684\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 64d6efac46c1d450bbcb0f49d098bea2, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: "\u590F\u5929\u7684\u9C7C"
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 0
+    fieldID: 010000000200000000000000
+    seasons: 01000000
+    weathers: 00000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 2
+    difficultyLevel: 0
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2012
+    ItemName: "\u590F\u5929\u7684\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 64d6efac46c1d450bbcb0f49d098bea2, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 1
+    fieldID: 0000000001000000
+    seasons: 01000000
+    weathers: 00000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 2
+    difficultyLevel: 0
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
+  - ItemID: 2010
+    ItemName: "\u5947\u602A\u7684\u6298\u7EB8\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 9930d861d3ccf4ddc87536ae85a56425, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 3
+    difficultyLevel: 0
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 1
+    dashProbability: 0.2
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1.2
+  - ItemID: 2011
+    ItemName: "\u5947\u602A\u7684\u6298\u7EB8\u9C7C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 9930d861d3ccf4ddc87536ae85a56425, type: 3}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 10
+    effectDuration: 0
+    rarity: 1
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges:
+    - StartTime: 600
+      EndTime: 1800
+    schemes: 
+    level: 3
+    difficultyLevel: 0
+    fishingToolItemID: ec030000
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1
