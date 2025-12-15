@@ -36,3 +36,9 @@ Thumbs.db
 .vs/
 *.apk
 *.unitypackage
+
+# JetBrains / Rider / IntelliJ
+.idea/
+
+# Unity Version Control / Plastic SCM
+.plastic/
