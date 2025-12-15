@@ -13,6 +13,9 @@ public abstract class Skill
     public float range;       // 作用范围
     public float manaCost;    // 消耗的魔法值
 
+    public Sprite icon;
+    
+
     public virtual void UpdateValues(){}
 
     public abstract void Execute();
@@ -47,6 +50,12 @@ public static class SkillFactory
                 skill = new BasicFishingSkill();
                 ((BasicFishingSkill)skill).probabilityUp = ((BasicFishingSkillData)skillData).probabilityUp;
                 break;
+            case SkillType.TestSkill1:
+                skill = new TestSkill1();
+                break;
+            case SkillType.TestSkill2:
+                skill = new TestSkill2();
+                break;
             default:
                 throw new ArgumentException("Invalid skill type");
         }
@@ -59,6 +68,16 @@ public static class SkillFactory
         skill.damage = skillData.damage;
         skill.range = skillData.range;
         skill.manaCost = skillData.manaCost;
+        // 图标赋值，若为空则加载默认图标
+        if (skillData.icon != null)
+        {
+            skill.icon = skillData.icon;
+        }
+        else
+        {
+            //Assets/Resources文件夹下的DefaultSkillIcon文件
+            skill.icon = Resources.Load<Sprite>("DefaultSkillIcon");
+        }
 
         return skill;
     }
@@ -92,5 +111,24 @@ public class BasicFishingSkill : PassiveSkill
         {
             Debug.LogWarning($"No probability defined for skill level: {skillLevel}");
         }
+    }
+}
+
+
+public class TestSkill1 : ActionSkill
+{
+    public override void Execute()
+    {
+        // 执行技能效果
+        Debug.Log("Executing TestSkill1");
+    }
+}
+
+public class TestSkill2 : ActionSkill
+{
+    public override void Execute()
+    {
+        // 执行技能效果
+        Debug.Log("Executing TestSkill2");
     }
 }

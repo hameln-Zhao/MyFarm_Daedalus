@@ -5,6 +5,51 @@ using System;
 using MyFarm.Dialogue;
 public static class EventHandler
 {
+    // ============== 玩家属性事件(新增) ==============
+    public static event Action<int,int> PlayerHealthChanged; // currentHP, maxHP
+
+    public static void CallPlayerHealthChanged(int current, int max)
+    {
+        PlayerHealthChanged?.Invoke(current, max);
+    }
+
+    public static event Action<int,int,int> PlayerDamaged; // damage, currentHP, maxHP
+    public static void CallPlayerDamaged(int damage,int current,int max)
+    {
+        PlayerDamaged?.Invoke(damage, current, max);
+    }
+
+    public static event Action<int,int,int> PlayerHealed; // heal, currentHP, maxHP
+    public static void CallPlayerHealed(int heal,int current,int max)
+    {
+        PlayerHealed?.Invoke(heal, current, max);
+    }
+
+    public static event Action PlayerDied;
+    public static void CallPlayerDied()
+    {
+        PlayerDied?.Invoke();
+    }
+
+    public static event Action<int,int> PlayerManaChanged; // currentMP, maxMP
+    public static void CallPlayerManaChanged(int current,int max)
+    {
+        PlayerManaChanged?.Invoke(current, max);
+    }
+
+    public static event Action<int,int,int> PlayerManaConsumed; // cost, currentMP, maxMP
+    public static void CallPlayerManaConsumed(int cost,int current,int max)
+    {
+        PlayerManaConsumed?.Invoke(cost, current, max);
+    }
+
+    public static event Action<int,int,int> PlayerManaRecovered; // amount, currentMP, maxMP
+    public static void CallPlayerManaRecovered(int amount,int current,int max)
+    {
+        PlayerManaRecovered?.Invoke(amount, current, max);
+    }
+    // =================================================
+
     public static event Action<InventoryLocation,List<InventoryItem> > UpdataInventoryUI;
     public static void CallUpdataInventoryUI(InventoryLocation inventoryLocation, List<InventoryItem> inventoryItems)
     {
@@ -218,13 +263,13 @@ public static class EventHandler
     {
         StartingFishing?.Invoke(fishingFloatingTrans);
     }
-    //执行结束钓鱼
+    //完成钓鱼
     public static event Action FinishFishing;
     public static void CallFinishFishing()
     {
         FinishFishing?.Invoke();
     }
-    //进行钓鱼
+    //开始钓鱼
     public static event Action GoFishing;
     public static void CallGoFishing()
     {

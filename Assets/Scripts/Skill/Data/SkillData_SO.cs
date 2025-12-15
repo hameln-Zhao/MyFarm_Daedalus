@@ -13,6 +13,7 @@ public class SkillData : ScriptableObject
     public float damage=0f;
     public float range=0f;
     public float manaCost=0f;
+    public Sprite icon; // 技能图标
 }
 /// <summary>
 /// 用于存储技能数据，仅在初始化时使用。

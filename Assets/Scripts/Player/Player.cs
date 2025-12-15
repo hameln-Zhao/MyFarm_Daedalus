@@ -22,10 +22,15 @@ public class Player : MonoBehaviour
         private float mouseX;
         private float mouseY;
         private bool useTool;
+        
+        [SerializeField] private PlayerStats _playerStats;
+        [SerializeField] private int _magicMpCost = 5; // 每次施加消耗多少MP
+
         private void Awake()
         {
             _rb2d = GetComponent<Rigidbody2D>();
             animators = GetComponentsInChildren<Animator>();
+            _playerStats = GetComponent<PlayerStats>();
         }
 
         private void OnEnable()
@@ -255,8 +260,19 @@ public class Player : MonoBehaviour
         private void ApplyMagicToCrop(Vector3 mouseWorldPos, ItemDetails itemDetails)
         {
             TileDetails tileDetails = GridMapManager.Instance.GetTileDetailsFromWorldPosition(mouseWorldPos);
+            if (tileDetails == null) return;
+            if (tileDetails.seedItemID == -1) return;
            //TODO:解决这个问题  MagicAmount应该是在比如cropDeatail里的
-           // EventHandler.CallApplyMagicEvent(tileDetails,itemDetails.MagicAmount);
+           if (_playerStats == null)
+               return;
+           int magicAmount = 1;
+           if (!_playerStats.ConsumeMP(_magicMpCost))
+           {
+               Debug.Log("MP不够");
+               return; // MP 不足则不施加
+           }
+               
+           EventHandler.CallApplyMagicEvent(tileDetails,magicAmount);
         }
         
 }

@@ -7,6 +7,7 @@ public class MushroomBomb : MonoBehaviour
     public Sprite[] animationFrames; // 放入帧图
     public float chargeDuration = 3f; // 蓄力时间
     public float explosionDuration = 1f; // 爆炸时间
+    public int damage = 10; // 爆炸伤害
 
     public SpriteRenderer sr;
     public Coroutine currentRoutine;
@@ -64,6 +65,15 @@ public class MushroomBomb : MonoBehaviour
         {
             yield return StartCoroutine(PlayExplosion());
             Debug.Log("受到伤害");
+            // 扣血逻辑
+            if (player != null)
+            {
+                var stats = player.GetComponent<PlayerStats>();
+                if (stats != null)
+                {
+                    stats.TakeDamage(damage);
+                }
+            }
             Destroy(gameObject);
         }
     }
