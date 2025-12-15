@@ -12,5 +12,275 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1543048f77774cb4d87a4079e6e1df0e, type: 3}
   m_Name: ConsumableDataList_SO
   m_EditorClassIdentifier: 
-  ItemDetailsList: []
+  ItemDetailsList:
+  - ItemID: 2001
+    ItemName: "\u5C0F\u9EA6"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: c3530019b054bc54eaae9c7edba96abd, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: c3530019b054bc54eaae9c7edba96abd, type: 3}
+    ItemDescription: "\u539F\u91CE\u4E0A\u6380\u8D77\u91D1\u8272\u7684\u9EA6\u6D6A\uFF0C\u62FE\u8D77\u91D1\u8272\u7684\u9EA6\u7A57\u7F16\u7EC7\u6210\u4E30\u7A70\u7684\u7A57\u51A0\uFF0C\u732E\u7ED9\u6148\u7231\u7684\u5FB7\u58A8\u5FD2\u5C14"
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 0
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2002
+    ItemName: "\u5C0F\u9EA6\u79CD\u5B50"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 13bf41e80eb433b42857b2f58ee72115, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 13bf41e80eb433b42857b2f58ee72115, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 1
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 0
+    consumableType: 8
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2003
+    ItemName: "\u6708\u6842"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 57581248cd50e004b9be7cacdd5d6a66, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 57581248cd50e004b9be7cacdd5d6a66, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 0
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2004
+    ItemName: "\u6708\u6842\u79CD\u5B50"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: bc9d45f992afa4348be9f2647da8fddb, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: bc9d45f992afa4348be9f2647da8fddb, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 1
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 0
+    consumableType: 8
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2005
+    ItemName: "\u575A\u679C"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 78a71831a6136654ab5ab2a80c9c3402, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 78a71831a6136654ab5ab2a80c9c3402, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 0
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2006
+    ItemName: "\u575A\u679C\u79CD\u5B50"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 0e50670641feaa74eba88ceb121d3f67, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 0e50670641feaa74eba88ceb121d3f67, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 1
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 0
+    consumableType: 8
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2007
+    ItemName: "\u9632\u98CE\u8349"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 566d612a7d383d4429794fb03be351ae, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 566d612a7d383d4429794fb03be351ae, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 0
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2008
+    ItemName: "\u9632\u98CE\u8349\u79CD\u5B50"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 1663b92cd58201644874d2b3f9fdc911, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 1663b92cd58201644874d2b3f9fdc911, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 1
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 1
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 0
+    consumableType: 8
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2009
+    ItemName: "\u756A\u8304"
+    ItemType: 5
+    ItemIcon: {fileID: 21300000, guid: 2cab4942270800a47be7e35f343692a7, type: 3}
+    ItemOnWorldSprite: {fileID: 21300000, guid: 2cab4942270800a47be7e35f343692a7, type: 3}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 0
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+  - ItemID: 2010
+    ItemName: "\u65B0\u7269\u54C1"
+    ItemType: 5
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 0
+    CanInBag: 0
+    CanWear: 0
+    CanHold: 0
+    CanSell: 0
+    CanUse: 0
+    CanPlace: 0
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 0
+    CanGift: 0
+    CanPickedup: 0
+    CanDropped: 0
+    CanCarried: 0
+    consumableType: 0
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
   fishDataList_SO: {fileID: 11400000, guid: de75982f8473b7f44aa836fb50474a9d, type: 2}

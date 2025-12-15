@@ -589,3 +589,49 @@ MonoBehaviour:
     dashProbability: 0.1
     dashSpeedMultiplier: 1.5
     dashDuration: 1
+  - ItemID: 2013
+    ItemName: "\u65B0\u9C7C\u7C7B"
+    ItemType: 5
+    ItemIcon: {fileID: 0}
+    ItemOnWorldSprite: {fileID: 0}
+    ItemDescription: 
+    ItemPrice: 0
+    ItemUseRadius: 0
+    SellPercentage: 0
+    CanStack: 1
+    CanInBag: 1
+    CanWear: 0
+    CanHold: 1
+    CanSell: 1
+    CanUse: 1
+    CanPlace: 1
+    CanRotate: 0
+    CanInteractOnMap: 0
+    CanUseInCrafting: 1
+    CanGift: 1
+    CanPickedup: 1
+    CanDropped: 1
+    CanCarried: 1
+    consumableType: 6
+    restoreValue: 0
+    effectDuration: 0
+    rarity: 0
+    fieldID: 0000000001000000
+    seasons: 00000000010000000200000003000000
+    weathers: 0000000001000000020000000300000004000000
+    spawnTimeRanges: []
+    schemes: 
+    level: 1
+    difficultyLevel: 1
+    fishingToolItemID: 
+    producedMinAmount: 
+    producedMaxAmount: 
+    weightRange:
+      Min: 1
+      Max: 10
+    healthValue: 10
+    generateAtPlayerPosition: 0
+    canDash: 0
+    dashProbability: 0.1
+    dashSpeedMultiplier: 1.5
+    dashDuration: 1

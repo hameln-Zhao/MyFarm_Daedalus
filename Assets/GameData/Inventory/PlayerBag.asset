@@ -21,14 +21,14 @@ MonoBehaviour:
     ItemAmount: 1
   - ItemID: 1004
     ItemAmount: 1
-  - ItemID: 0
-    ItemAmount: 0
-  - ItemID: 0
-    ItemAmount: 0
-  - ItemID: 0
-    ItemAmount: 0
-  - ItemID: 0
-    ItemAmount: 0
+  - ItemID: 20020
+    ItemAmount: 90
+  - ItemID: 20040
+    ItemAmount: 99
+  - ItemID: 20060
+    ItemAmount: 98
+  - ItemID: 20100
+    ItemAmount: 99
   - ItemID: 0
     ItemAmount: 0
   - ItemID: 0

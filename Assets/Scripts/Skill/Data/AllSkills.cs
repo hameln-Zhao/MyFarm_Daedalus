@@ -9,3 +9,4 @@ public class BasicFishingSkillData : SkillData
 {
     public float probabilityUp; // 钓鱼技能特有的字段
 }
+

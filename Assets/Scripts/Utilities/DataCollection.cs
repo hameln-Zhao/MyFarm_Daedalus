@@ -129,5 +129,7 @@ public class TileDetails
 public enum SkillType
 {
     BasicFishing,
-    Heal
+    Heal,
+    TestSkill1,
+    TestSkill2,
 }

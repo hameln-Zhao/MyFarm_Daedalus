@@ -2350,6 +2350,8 @@ GameObject:
   - component: {fileID: 1282713824}
   - component: {fileID: 1282713825}
   - component: {fileID: 1282713826}
+  - component: {fileID: 1282713827}
+  - component: {fileID: 1282713828}
   m_Layer: 0
   m_Name: //Player
   m_TagString: Player
@@ -2535,6 +2537,35 @@ MonoBehaviour:
   - partType: 3
     partName: 3
     overrideController: {fileID: 22100000, guid: be7a1691afd62334e87e5cac27cf5c88, type: 2}
+--- !u!114 &1282713827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282713818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c51a109accfa04d846e1849197d272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats_SO: {fileID: 11400000, guid: 7200246cdb1210548bca8c354fdbe70a, type: 2}
+  _currentHP: 0
+  _currentMP: 0
+  _isDead: 0
+--- !u!114 &1282713828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282713818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d36dff5dab7c044eb8da917afd16589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerStats: {fileID: 1282713827}
 --- !u!1 &1343725813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,7 +2913,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

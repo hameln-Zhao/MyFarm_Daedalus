@@ -12,6 +12,8 @@ namespace MyFarm.CropPlant
         private Transform cropParent;
         private Grid currentGrid;
         private Season currentSeason;
+        
+        private readonly Dictionary<Vector2Int, GameObject> _cropInstanceMap = new();
         private void OnEnable()
         {
             EventHandler.PlantSeedEvent += OnPlantSeedEvent;
@@ -33,9 +35,21 @@ namespace MyFarm.CropPlant
         private void OnPlantSeedEvent(int itemID, TileDetails tileDetails)
         {
             CropDetails cropDetails = GetCropDetails(itemID);
+            Debug.Log($"[Plant] itemID={itemID} cropNull={(cropDetails==null)}");
+
+            if (cropDetails == null)
+            {
+                Debug.LogError($"[Plant] GetCropDetails failed. itemID={itemID}");
+                return;
+            }
+
+            Debug.Log($"[Plant] seasonsNull={(cropDetails.seasons==null)} seasonsLen={(cropDetails.seasons==null? -1 : cropDetails.seasons.Length)}");
+            Debug.Log($"[Plant] canCrop={SeasonAvailable(cropDetails)}");
+            
             //场地空的，种子有的，季节是允许的
             if (cropDetails != null && SeasonAvailable(cropDetails)&& tileDetails.seedItemID==-1)
             {
+                Debug.Log("cropDetails不为空,season允许,地块是空的");
                 tileDetails.seedItemID = itemID;
                 tileDetails.growthDays = 0;
                 tileDetails.currentMagicAmount = 0;
@@ -46,8 +60,13 @@ namespace MyFarm.CropPlant
                 DisplayCropPlant(tileDetails,cropDetails);
             }else if (tileDetails.seedItemID!=-1)
             {
+                Debug.Log("地块不是空的");
                 //显示农作物
                 DisplayCropPlant(tileDetails,cropDetails);
+            }
+            else
+            {
+                Debug.Log("前面的条件都没有进去");
             }
         }
         /// <summary>
@@ -57,6 +76,15 @@ namespace MyFarm.CropPlant
         /// <param name="cropDetails"></param>
         private void DisplayCropPlant(TileDetails tileDetails, CropDetails cropDetails)
         {
+            if (tileDetails == null || cropDetails == null) return;
+
+            Vector2Int key = new Vector2Int(tileDetails.gridX, tileDetails.gridY);
+
+            // 先删掉旧的
+            if (_cropInstanceMap.TryGetValue(key, out GameObject old) && old != null)
+                Destroy(old);
+            
+            Debug.Log("种植植物，然后显示植物");
             //成长阶段
             int growthStages = cropDetails.growthDays.Length;
             int currentStage = 0;
@@ -76,11 +104,15 @@ namespace MyFarm.CropPlant
             GameObject cropPrefab=cropDetails.growthPrefabs[currentStage];
             //Sprite cropSprite = cropDetails.growthSprites[currentStage];
             Debug.Log(tileDetails.isMutated);
-            Sprite cropSprite = tileDetails.isMutated ? cropDetails.mutantSprites[currentStage] : cropDetails.growthSprites[currentStage];
+            Sprite cropSprite = tileDetails.isMutated
+                ? cropDetails.mutantSprites[currentStage]
+                : cropDetails.growthSprites[currentStage];
             Vector3 pos=new Vector3(tileDetails.gridX+0.5f,tileDetails.gridY+0.5f,0);
             GameObject cropInstance = Instantiate(cropPrefab, pos, Quaternion.identity,cropParent);
             cropInstance.GetComponentInChildren<SpriteRenderer>().sprite=cropSprite;
             cropInstance.GetComponent<Crop>().cropDetails = cropDetails;
+            
+            _cropInstanceMap[key] = cropInstance;
         }
         /// <summary>
         /// 施加魔素时更新tiledetails
